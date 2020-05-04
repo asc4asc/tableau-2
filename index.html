@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+    <html lang="en">
+    	<head>
+    		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+    		<!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<script type="text/javascript">
+function bout1() { 
+    document.getElementById("S12").innerHTML="V5";
+    document.getElementById("S21").innerHTML="D2";
+}
+function bout2() { 
+    document.getElementById("S34").innerHTML="D2";
+    document.getElementById("S43").innerHTML="V2";
+}
+function bout3() { 
+    document.getElementById("S14").innerHTML="V5";
+    document.getElementById("S41").innerHTML="D1";
+}
+function bout4() { 
+    document.getElementById("S23").innerHTML="D0";
+    document.getElementById("S32").innerHTML="V5";
+}
+function bout5() { 
+    document.getElementById("S24").innerHTML="D3";
+    document.getElementById("S42").innerHTML="V5";
+}
+function bout6() { 
+    document.getElementById("S31").innerHTML="V5";
+    document.getElementById("S13").innerHTML="D3";
+}
+function boutc() {    
+    var x = 0; 
+      x = x*1 + 1*document.getElementById("S12").innerHTML[1] ;
+      x = x*1 + 1*document.getElementById("S13").innerHTML[1] ;
+      x = x*1 + 1*document.getElementById("S14").innerHTML[1] ;
+      document.getElementById("I21").innerHTML=x;
+    var x = 0;
+      x = x*1 + 1*document.getElementById("S21").innerHTML[1] ;
+      x = x*1 + 1*document.getElementById("S23").innerHTML[1] ;
+      x = x*1 + 1*document.getElementById("S24").innerHTML[1] ;
+      document.getElementById("I22").innerHTML=x;
+    var x = 0;
+      x = x*1 + 1*document.getElementById("S31").innerHTML[1] ;
+      x = x*1 + 1*document.getElementById("S32").innerHTML[1] ;
+      x = x*1 + 1*document.getElementById("S34").innerHTML[1] ;
+      document.getElementById("I23").innerHTML=x;    
+    var x = 0;
+      x = x*1 + 1*document.getElementById("S41").innerHTML[1] ;
+      x = x*1 + 1*document.getElementById("S42").innerHTML[1] ;
+      x = x*1 + 1*document.getElementById("S43").innerHTML[1] ; 
+      document.getElementById("I24").innerHTML=x;
+}
+    
+function boutd() {    
+    var x = 0; 
+      x = x*1 + 1*document.getElementById("S21").innerHTML[1] ;
+      x = x*1 + 1*document.getElementById("S31").innerHTML[1] ;
+      x = x*1 + 1*document.getElementById("S41").innerHTML[1] ;
+      document.getElementById("I31").innerHTML=x;
+    var x = 0;
+      x = x*1 + 1*document.getElementById("S12").innerHTML[1] ;
+      x = x*1 + 1*document.getElementById("S32").innerHTML[1] ;
+      x = x*1 + 1*document.getElementById("S42").innerHTML[1] ;
+      document.getElementById("I32").innerHTML=x;
+    var x = 0;
+      x = x*1 + 1*document.getElementById("S13").innerHTML[1] ;
+      x = x*1 + 1*document.getElementById("S23").innerHTML[1] ;
+      x = x*1 + 1*document.getElementById("S43").innerHTML[1] ;
+      document.getElementById("I33").innerHTML=x;    
+    var x = 0;
+      x = x*1 + 1*document.getElementById("S14").innerHTML[1] ;
+      x = x*1 + 1*document.getElementById("S24").innerHTML[1] ;
+      x = x*1 + 1*document.getElementById("S34").innerHTML[1] ; 
+      document.getElementById("I34").innerHTML=x;
+}
+    
+function bouta() {    
+    var x = 0; 
+    if ( document.getElementById("S12").innerHTML[0] == "V" ) { x=x+1; }
+    if ( document.getElementById("S13").innerHTML[0] == "V" ) { x=x+1; }
+    if ( document.getElementById("S14").innerHTML[0] == "V" ) { x=x+1; }    
+    document.getElementById("I11").innerHTML=x;
+    var x = 0; 
+    if ( document.getElementById("S21").innerHTML[0] == "V" ) { x=x+1; }
+    if ( document.getElementById("S23").innerHTML[0] == "V" ) { x=x+1; }
+    if ( document.getElementById("S24").innerHTML[0] == "V" ) { x=x+1; }    
+    document.getElementById("I12").innerHTML=x;
+    var x = 0; 
+    if ( document.getElementById("S31").innerHTML[0] == "V" ) { x=x+1; }
+    if ( document.getElementById("S32").innerHTML[0] == "V" ) { x=x+1; }
+    if ( document.getElementById("S34").innerHTML[0] == "V" ) { x=x+1; }    
+    document.getElementById("I13").innerHTML=x;
+    var x = 0; 
+    if ( document.getElementById("S41").innerHTML[0] == "V" ) { x=x+1; }
+    if ( document.getElementById("S42").innerHTML[0] == "V" ) { x=x+1; }
+    if ( document.getElementById("S43").innerHTML[0] == "V" ) { x=x+1; }    
+    document.getElementById("I14").innerHTML=x;
+}
+
+function boutf() {    
+    var n = document.getElementById("I21").innerHTML*1 - document.getElementById("I31").innerHTML*1;
+    document.getElementById("I51").innerHTML=n;
+    var n = document.getElementById("I22").innerHTML*1 - document.getElementById("I32").innerHTML*1;
+    document.getElementById("I52").innerHTML=n;
+    var n = document.getElementById("I23").innerHTML*1 - document.getElementById("I33").innerHTML*1;
+    document.getElementById("I53").innerHTML=n;
+    var n = document.getElementById("I24").innerHTML*1 - document.getElementById("I34").innerHTML*1;
+    document.getElementById("I54").innerHTML=n;
+}
+function boute() {    
+    var n = document.getElementById("I11").innerHTML*1/3 ;
+    document.getElementById("I41").innerHTML=n;
+    var n = document.getElementById("I12").innerHTML*1/3 ;
+    document.getElementById("I42").innerHTML=n;
+    var n = document.getElementById("I13").innerHTML*1/3 ;
+    document.getElementById("I43").innerHTML=n;
+    var n = document.getElementById("I14").innerHTML*1/3 ;
+    document.getElementById("I44").innerHTML=n;
+}
+
+function boutz() { 
+    bouta();
+    boutc();
+    boutd();
+    boute();
+    boutf();
+}
+
+function bouty() { 
+    document.getElementById("I11").innerHTML="-";
+    document.getElementById("I12").innerHTML="-";
+    document.getElementById("I13").innerHTML="-";
+    document.getElementById("I14").innerHTML="-";
+    
+    document.getElementById("I21").innerHTML="-";
+    document.getElementById("I22").innerHTML="-";
+    document.getElementById("I23").innerHTML="-";
+    document.getElementById("I24").innerHTML="-";
+    
+    document.getElementById("I31").innerHTML="-";
+    document.getElementById("I32").innerHTML="-";
+    document.getElementById("I33").innerHTML="-";
+    document.getElementById("I34").innerHTML="-";
+    
+    document.getElementById("I41").innerHTML="-";
+    document.getElementById("I42").innerHTML="-";
+    document.getElementById("I43").innerHTML="-";
+    document.getElementById("I44").innerHTML="-";
+    
+    document.getElementById("I51").innerHTML="-";
+    document.getElementById("I52").innerHTML="-";
+    document.getElementById("I53").innerHTML="-";
+    document.getElementById("I54").innerHTML="-";
+    
+    document.getElementById("S12").innerHTML="00";
+    document.getElementById("S13").innerHTML="00";
+    document.getElementById("S14").innerHTML="00";
+    document.getElementById("S21").innerHTML="00";
+    document.getElementById("S23").innerHTML="00";
+    document.getElementById("S24").innerHTML="00";    
+    document.getElementById("S31").innerHTML="00";
+    document.getElementById("S32").innerHTML="00";
+    document.getElementById("S34").innerHTML="00";
+    document.getElementById("S41").innerHTML="00";
+    document.getElementById("S42").innerHTML="00";
+    document.getElementById("S43").innerHTML="00";
+} 
+    
+</script>   
+
+</head>
+<body>
+    
+<h2>Eine kleine Runde als Beispiel:</h2>
+
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th>Name</th>
+      <th>Nr</th>
+      <th>-1-</th>
+      <th>-2-</th>
+      <th>-3-</th>
+      <th>-4-</th>
+      <th>V</th>
+      <th>M</th>
+      <th>TD</th>
+      <th>TR</th>
+      <th>Ind.</th>
+      <th>Diff</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Marie</td>
+      <td>1</td>
+      <td>x</td>
+      <td id="S12">V1</td>
+      <td id="S13">D1</td>
+      <td id="S14">V5</td>
+      <td id="I11">-</td>
+      <td>4</td>
+      <td id="I21">-</td>
+      <td id="I31">-</td>
+      <td id="I41">-</td>
+      <td id="I51">-</td>  
+    </tr>
+    <tr>
+      <td>Moritz</td>
+      <td>2</td>
+      <td id="S21">D0</td>
+      <td>x</td>
+      <td id="S23">D2</td>
+      <td id="S24">V5</td>
+      <td id="I12">-</td>
+      <td>4</td>
+      <td id="I22">-</td>
+      <td id="I32">-</td>
+      <td id="I42">-</td>
+      <td id="I52">-</td>
+    </tr>
+    <tr>
+      <td>Kurt</td>
+      <td>3</td>
+      <td id="S31">V5</td>
+      <td id="S32">V5</td>
+      <td>x</td>
+      <td id="S34">V5</td>
+      <td id="I13">-</td>
+      <td>4</td> 
+      <td id="I23">-</td>
+      <td id="I33">-</td>
+      <td id="I43">-</td>
+      <td id="I53">-</td>
+
+    </tr>
+    <tr>
+      <td>Petra</td>
+      <td>4</td>
+      <td id="S41">D1</td>
+      <td id="S42">D2</td>
+      <td id="S43">D1</td>
+      <td>x</td>  
+      <td id="I14">-</td>
+      <td>4</td> 
+      <td id="I24">-</td>
+      <td id="I34">-</td>
+      <td id="I44">-</td>
+      <td id="I54">-</td>  
+    </tr>
+  </tbody>
+</table>    	
+
+<p>
+<button class="btn btn-primary" type="submit" onclick="bout1()">Marie mit Moritz</button>
+<button class="btn btn-primary" type="submit" onclick="bout2()">Kurt mit Petra</button>    
+<button class="btn btn-primary" type="submit" onclick="bout3()">Petra mit Marie</button>
+<button class="btn btn-primary" type="submit" onclick="bout4()">Kurt mit Moritz</button>    
+<button class="btn btn-primary" type="submit" onclick="bout5()">Moritz mit Petra</button>
+<button class="btn btn-primary" type="submit" onclick="bout6()">Kurt mit Marie</button>  
+<button class="btn btn-primary" type="submit" onclick="bouta()">-V-</button>
+<button class="btn btn-primary" type="submit" onclick="boutc()">TD</button>    
+<button class="btn btn-primary" type="submit" onclick="boutd()">TR</button>  
+<button class="btn btn-primary" type="submit" onclick="boute()">Ind.</button>  
+<button class="btn btn-primary" type="submit" onclick="boutf()">Diff.</button>  
+<button class="btn btn-primary" type="submit" onclick="boutz()">All.</button> 
+<button class="btn btn-primary" type="submit" onclick="bouty()">-C-</button>    
+</body>
+</html>
