@@ -44,25 +44,32 @@ button {
 </style>     
             
 <script type="text/javascript">
-function bout1() { 
+function bout1() {
+    clearmark()
     document.getElementById("S12").style.backgroundColor = "lightblue";
     document.getElementById("S21").style.backgroundColor = "lightblue"; 
     document.getElementById("S12").innerHTML="V5";
     document.getElementById("S21").innerHTML="D2";
 }
 function bout2() { 
+    clearmark()
+    document.getElementById("S34").style.backgroundColor = "lightblue";
+    document.getElementById("S43").style.backgroundColor = "lightblue"; 
     document.getElementById("S34").innerHTML="D2";
     document.getElementById("S43").innerHTML="V2";
 }
-function bout3() { 
+function bout3() {
+    clearmark()
     document.getElementById("S14").innerHTML="V5";
     document.getElementById("S41").innerHTML="D1";
 }
-function bout4() { 
+function bout4() {
+    clearmark()
     document.getElementById("S23").innerHTML="D0";
     document.getElementById("S32").innerHTML="V5";
 }
-function bout5() { 
+function bout5() {
+    clearmark()
     document.getElementById("S24").innerHTML="D3";
     document.getElementById("S42").innerHTML="V5";
 }
@@ -74,6 +81,9 @@ function bout6() {
 function clearmark() {
     document.getElementById("S12").style.backgroundColor = "";
     document.getElementById("S21").style.backgroundColor = ""; 
+    document.getElementById("S34").style.backgroundColor = "";
+    document.getElementById("S43").style.backgroundColor = ""; 
+
 }
 function boutc() {    
     var x = 0; 
