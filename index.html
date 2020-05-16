@@ -2,13 +2,31 @@
     <html lang="en">
     	<head>
     		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
-    		<!-- Bootstrap CSS -->
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
          
-<style> 
-table: class="table"
-thead: class="thead-light"
-</style>      
+<style>
+table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:hover {background-color: #ddd;}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+</style>     
             
 <script type="text/javascript">
 function bout1() { 
@@ -218,9 +236,9 @@ var persons = [
         document.write("<tr>");
         var n=1*i+1;
         // Loop through all the properties in the object 
-        document.write("<th>"+ n + "</th>");
+        document.write("<td>"+ n + "</td>");
         for(var prop in persons[i]) {  
-            document.write("<th>" + persons[i][prop] + "</th>"); 
+            document.write("<td>" + persons[i][prop] + "</td>"); 
         }
         document.write("</tr>"); 
     }
