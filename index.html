@@ -45,7 +45,7 @@ button {
             
 <script type="text/javascript">
 function bout1() { 
-    document.getElementById("S12").style.backgroundColor = "lightred";
+    document.getElementById("S12").style.backgroundColor = "lightblue";
     document.getElementById("S21").style.backgroundColor = "lightblue"; 
     document.getElementById("S12").innerHTML="V5";
     document.getElementById("S21").innerHTML="D2";
@@ -69,6 +69,11 @@ function bout5() {
 function bout6() { 
     document.getElementById("S31").innerHTML="V5";
     document.getElementById("S13").innerHTML="D3";
+}
+    
+function clearmark() {
+    document.getElementById("S12").style.backgroundColor = "";
+    document.getElementById("S21").style.backgroundColor = ""; 
 }
 function boutc() {    
     var x = 0; 
@@ -368,5 +373,6 @@ var persons = [
 <script>
   index();
   boutz();
+  clearmark();  
 </script>    
 </html>
