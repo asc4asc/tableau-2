@@ -15,7 +15,7 @@ Für verschiedene Anwendungen müssten die entsprechenden Ziele beachtet werden:
    * fexibel in den Teilnehmerzahlen 
    * Druckbare Zettel
 
-Diese Version geht in Richtung 1. :-) Wobei sich eine Restrukturierung anbieten würde. 
+Diese Version geht in Richtung 2. :-) Wobei sich eine Restrukturierung anbieten würde. 
 Wobei die Namen u.s.w. noch sprechend aufbereitet werden sollten.
 
 HTML pure. 
