@@ -15,7 +15,10 @@ Für verschiedene Anwendungen müssten die entsprechenden Ziele beachtet werden:
    * fexibel in den Teilnehmerzahlen 
    * Druckbare Zettel
 
-Diese Version geht in Richtung 2. :-) Wobei sich eine Restrukturierung anbieten würde. 
+Diese Version geht in Richtung 2. :-) Wobei sich eine Restrukturierung dringend anbieten würde. 
 Wobei die Namen u.s.w. noch sprechend aufbereitet werden sollten.
+
+Den Sinn der C Taste müsste man erklären.
+Auch so müsste man dem ganzen noch einen klaren Ablauf und eine Story geben. 
 
 HTML pure. 
